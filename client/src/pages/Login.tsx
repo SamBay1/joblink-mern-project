@@ -46,8 +46,8 @@ const Login = () => {
         <Logo />
         <h4>Login </h4>
         {/* {errors?.messsage  && <p style={{color: 'red'}}>{errors.msg}</p>} */}
-        <FormRow type='email' name='email' defaultValue='sam@gmail.com' />
-        <FormRow type='password' name='password' defaultValue='secret123' />
+        <FormRow type='email' name='email' defaultValue='' />
+        <FormRow type='password' name='password' defaultValue='' />
 
         <button type='submit' className='btn btn-block' disabled={isSubmitting}>
           {isSubmitting ? 'submitting' : 'submit'}

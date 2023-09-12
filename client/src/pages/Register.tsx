@@ -27,16 +27,16 @@ const Register = () => {
       <Form method='post' className='form'>
         <Logo />
         <h4>Register</h4>
-        <FormRow type='text' name='name' labelText='Name' defaultValue='Sam' />
+        <FormRow type='text' name='name' labelText='Name' defaultValue='' />
         <FormRow
           type='text'
           name='lastName'
           labelText='Last Name'
-          defaultValue='Bel'
+          defaultValue=''
         />
-        <FormRow type='text' name='location' defaultValue='Berlin' />
-        <FormRow type='email' name='email' defaultValue='sam@gmail.com' />
-        <FormRow type='password' name='password' defaultValue='secret123' />
+        <FormRow type='text' name='location' defaultValue='' />
+        <FormRow type='email' name='email' defaultValue='' />
+        <FormRow type='password' name='password' defaultValue='' />
 
         <button type='submit' className='btn btn-block' disabled={isSubmitting}>
           {isSubmitting ? 'submitting ...' : 'submit'}
